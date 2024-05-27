@@ -1,0 +1,9 @@
+/.vscode
+__pycache__
+/.venv
+
+/data
+
+/upload
+
+/ckpt

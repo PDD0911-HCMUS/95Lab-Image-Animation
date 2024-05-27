@@ -1,0 +1,13 @@
+python demo.py  
+--config config/dataset_name.yaml 
+--driving_video path/to/driving 
+--source_image path/to/source 
+--checkpoint ckpt
+--relative 
+--adapt_scale
+
+python demo.py  --config config/vox-256.yaml --driving_video data/vid/vid1.mp4 --source_image data/src/trump_face.jpeg --checkpoint ckpt/vox-cpk.pth.tar --relative --adapt_scale
+CUDA_VISIBLE_DEVICES=0 python run.py --config config/fashion-256.yaml --mode animate --checkpoint ckpt
+
+
+python demo.py  --config config/vox-256.yaml --driving_video data/vid/vid2.mp4 --source_image data/src/trump_face.jpeg --checkpoint ckpt/vox-cpk.pth.tar --relative --adapt_scale
