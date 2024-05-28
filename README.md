@@ -39,7 +39,10 @@ API: `http://127.0.0.1:5000/animation`
 
 Methos: `POST`
 
+Các mode thực hiện: `1: Nhắm mắt `, `2: Cười `, `3: Xoay trái `, `4: Xoay phải `.
+
 ![alt text](Api-1.png)
 
 Kết quả sẽ ở tại thư mục: `upload/`.
+
 ![alt text](Api-2.png)

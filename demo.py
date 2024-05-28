@@ -114,13 +114,13 @@ def create_animation(source_image, mode):
     video_name = source_image.split('.')[0] + '.mp4'
 
     if(mode == '1'):
-        driving_video_mode = '.\\data\\vid_drive\\eye.mp4' # Nhắm mắt
+        driving_video_mode = '.\\vid_drive\\eye.mp4' # Nhắm mắt
     if(mode == '2'):
-        driving_video_mode = '.\\data\\vid_drive\\smile.mp4' # Cười
+        driving_video_mode = '.\\vid_drive\\smile.mp4' # Cười
     if(mode == '3'):
-        driving_video_mode = '.\\data\\vid_drive\\left.mp4' # Xoay trái
+        driving_video_mode = '.\\vid_drive\\left.mp4' # Xoay trái
     if(mode == '4'):
-        driving_video_mode = '.\\data\\vid_drive\\right.mp4' # Xoay phải
+        driving_video_mode = '.\\vid_drive\\right.mp4' # Xoay phải
     source_image = imageio.imread(source_image)
     reader = imageio.get_reader(driving_video_mode)
     fps = reader.get_meta_data()['fps']
