@@ -111,7 +111,7 @@ def create_animation(source_image, mode):
     cpu = False
     config='config/vox-256.yaml'
     checkpoint='ckpt/vox-cpk.pth.tar'
-    video_name = source_image.split('.')[0] + '.mp4'
+    video_name = source_image.split('.')[0] + str(mode) + '.mp4'
 
     if(mode == '1'):
         driving_video_mode = '.\\vid_drive\\eye.mp4' # Nhắm mắt
