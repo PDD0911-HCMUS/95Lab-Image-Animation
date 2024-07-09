@@ -108,7 +108,7 @@ def create_animation(source_image, mode):
     driving_video_mode = None
     find_best_frame_mode=False
     best_frame=None
-    cpu = False
+    cpu = True
     config='config/vox-256.yaml'
     checkpoint='ckpt/vox-cpk.pth.tar'
     video_name = source_image.split('.')[0] + str(mode) + '.mp4'
@@ -118,9 +118,9 @@ def create_animation(source_image, mode):
     if(mode == '2'):
         driving_video_mode = '.\\vid_drive\\smile.mp4' # Cười
     if(mode == '3'):
-        driving_video_mode = '.\\vid_drive\\left1.mp4' # Xoay trái
+        driving_video_mode = '.\\vid_drive\\green-screen-l.mp4' # Xoay trái
     if(mode == '4'):
-        driving_video_mode = '.\\vid_drive\\right1.mp4' # Xoay phải
+        driving_video_mode = '.\\vid_drive\\green-screen-r.mp4' # Xoay phải
     source_image = imageio.imread(source_image)
     reader = imageio.get_reader(driving_video_mode)
     fps = reader.get_meta_data()['fps']
